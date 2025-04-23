@@ -1,0 +1,32 @@
+[project]
+name = "pygrunn-demo"
+authors = [
+    { name = "Dima Baranetskyi", email = "dima.baranetskyi@gmail.com"}
+]
+license = "MIT"
+version = "0.1.0"
+description = "Demo project for PyGrunn 2025"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "faker>=37.1.0",
+    "faststream[cli,redis]>=0.5.39",
+    "holidays>=0.71",
+    "numpy>=2.2.5",
+    "pycountry>=24.6.1",
+    "pycountry-convert>=0.7.2",
+    "pydantic>=2.11.3",
+    "pydantic-settings>=2.9.1",
+    "redis>=5.2.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.6",
+]
+
+[tool.ruff]
+line-length = 140
+lint.select = ["E", "F", "W"]
+lint.ignore = ["E501"]

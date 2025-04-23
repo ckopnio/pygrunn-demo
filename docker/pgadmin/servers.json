@@ -1,0 +1,16 @@
+{
+  "Servers": {
+    "1": {
+            "Name": "subscriptions",
+            "Group": "Servers",
+            "Port": 5432,
+            "Username": "postgres",
+            "Host": "subscription_db",
+            "MaintenanceDB": "subscriptions",
+            "ConnectionParameters": {
+                "sslmode": "prefer",
+                "connect_timeout": 10
+            }
+        }
+  }
+}
