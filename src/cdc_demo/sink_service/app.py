@@ -24,7 +24,7 @@ async def process_subscription(message: Subscription, logger: Logger):
         logger.error(f"Error processing subscription: {str(e)}")
 
 
-@broker.subscriber(stream=StreamSub(config.statistics_stream_name, group=config.sink_consumer_group, consumer="1"))
+@broker.subscriber(stream=StreamSub(config.statistics_stream_name, group=config.sink_consumer_group, consumer="2"))
 async def process_subscription_statistic(message: SubscriptionStatistic, logger: Logger):
     try:
         logger.info(f"Received subscription statistic: {message}")
