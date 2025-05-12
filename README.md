@@ -75,6 +75,10 @@ Each runs from a separate `app.py`.
 
 ---
 
+## 🔁 Service & Data Flow
+
+![Service & Data Flow](flow.png)
+
 ## 🔧 Custom Ports?
 
 Edit the `.env` file:
